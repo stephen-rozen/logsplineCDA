@@ -6,14 +6,14 @@
 \description{
 Package \pkg{logsplineCDA} provides the core helper functions used in
 Rozen and Canales (2025) \emph{A Logspline-Based Approach for Analyzing
-Left-Censored Concentration Data}. The package provides user-facing
-estimators for environmental concentration data with left-censoring at one
-or more limits of detection (LOD).
+Left-Censored Concentration Data}. The package provides estimation methods for 
+environmental concentration data with left-censoring at one or more limits of 
+detection (LOD).
 }
 \details{
 The main exported functions implement:
 \itemize{
-  \item logspline-based moment estimation (\code{spline_fit}, \code{spline_estimate})
+  \item logspline-based moment estimation (\code{spline_estimate})
   \item logspline-based robust imputation (\code{robust_spline})
   \item common alternatives (ROS, MLE, KM, substitution, beta substitution)
 }
@@ -23,7 +23,7 @@ for internal use (ROS and survival-based helpers) without requiring
 \pkg{NADA} as a dependency.
 }
 \author{
-Robert Canales and Stephen Rozen (paper authors).
+Stephen Rozen and Robert Canales (paper authors).
 }
 \references{
 Rozen, S. and Canales, R. (2025). \emph{A Logspline-Based Approach for
