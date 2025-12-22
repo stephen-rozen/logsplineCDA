@@ -9,11 +9,10 @@ Concentration Data*.
 From an R session:
 
 ```r
-# from the parent directory containing `logsplineCDA/`
-install.packages("logsplineCDA", repos = NULL, type = "source")
-
-# or, with devtools:
-# devtools::install_local("logsplineCDA")
+# install.packages("pak")
+pak::pak("stephen-rozen/logsplineCDA")
+# or:
+remotes::install_github("stephen-rozen/logsplineCDA")
 ```
 
 ## Main estimation functions
