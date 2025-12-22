@@ -1,0 +1,19 @@
+# Manual NAMESPACE (no roxygen2 required)
+
+import(methods)
+
+# survival is used by the bundled NADA-derived code (Cen/cenfit)
+importFrom(survival, Surv, survfit, survdiff)
+
+# Core estimation helpers ----------------------------------------------------
+export(ROS_estimate)
+export(MLE_estimate)
+export(KM_estimate)
+export(substitution_estimate)
+export(spline_fit)
+export(spline_estimate)
+export(robust_spline)
+export(beta_sub)
+
+# NOTE: NADA-derived helpers (ros/cenfit/hc.ppoints/etc.) are bundled for
+# internal use, but are not exported to keep the public API focused.

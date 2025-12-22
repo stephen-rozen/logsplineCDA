@@ -1,0 +1,30 @@
+Package: logsplineCDA
+Type: Package
+Title: Censored Data Analysis Helpers for Limit-of-Detection Concentration Data
+Version: 0.1.3
+Authors@R: c(
+    person(given = "Stephen", family = "Rozen", role = c("aut", "cre"), email = "ekh3hw@virginia.edu"),
+    person(given = "Robert", family = "Canales", role = c("aut"))
+    )
+Description: Implements the core helper functions used in Rozen and Canales
+    (2025) 'A Logspline-Based Approach for Analyzing Left-Censored
+    Concentration Data'. Includes logspline-based moment estimation (Spline)
+    and logspline-based robust imputation (rSpline), plus common alternatives
+    for left-censored (LOD) data such as regression on order statistics (ROS),
+    maximum likelihood estimation (MLE, bcMLE, rMLE), Kaplan-Meier (KM), and
+    several substitution methods.
+License: GPL-3
+Encoding: UTF-8
+Depends:
+    R (>= 3.5.0)
+Imports:
+    cubature,
+    EnvStats,
+    logspline,
+    survival,
+    methods
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
