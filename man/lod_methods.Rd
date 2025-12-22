@@ -44,9 +44,11 @@ beta_sub(censored_sim, censored_bool, LOD)
     (NADA-derived).
   \item \code{substitution_estimate}: Simple substitutions (LOD, LOD/2,
     LOD/sqrt(2), or zero).
-  \item \code{spline_fit}/\code{spline_estimate}: Logspline-based moment
-    estimation from a censored-data logspline density.
-  \item \code{robust_spline}: Logspline-based robust imputation (rSpline)
+  \item \code{spline_fit}: Generates an \code{oldlogspline} object for use with 
+  \code{spline_estimate} or \code{robust_spline}
+  \item \code{spline_estimate}: Logspline-based moment
+    estimation (\emph{Spline}) from a censored-data logspline density.
+  \item \code{robust_spline}: Logspline-based robust imputation (\emph{rSpline})
     using logspline quantiles.
   \item \code{beta_sub}: Beta substitution estimator (Hewett \& Ganser).
 }
