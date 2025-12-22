@@ -36,7 +36,7 @@ beta_sub(censored_sim, censored_bool, LOD)
 \details{
 \itemize{
   \item \code{ROS_estimate}: Regression on order statistics (ROS), using
-    \code{ros()} (NADA-derived).
+    \code{ros()}.
   \item \code{MLE_estimate}: Lognormal maximum likelihood estimation based on
     \code{EnvStats::elnormCensored(..., method = "mle")}, with options for a
     bias-corrected mean (bcMLE) and a robust imputation variant (rMLE).
@@ -44,19 +44,17 @@ beta_sub(censored_sim, censored_bool, LOD)
     (NADA-derived).
   \item \code{substitution_estimate}: Simple substitutions (LOD, LOD/2,
     LOD/sqrt(2), or zero).
-  \item \code{spline_fit}: Generates an \code{oldlogspline} object for use with 
-  \code{spline_estimate} or \code{robust_spline}
+  \item \code{spline_fit}: Generates an \code{oldlogspline} object 
   \item \code{spline_estimate}: Logspline-based moment
     estimation (\emph{Spline}) from a censored-data logspline density.
   \item \code{robust_spline}: Logspline-based robust imputation (\emph{rSpline})
     using logspline quantiles.
-  \item \code{beta_sub}: Beta substitution estimator (Hewett \& Ganser).
+  \item \code{beta_sub}: Beta substitution estimator (Hewett & Ganser).
 }
 }
 \value{
 Each estimator returns a named list with elements \code{mean}, \code{sd},
-\code{gm}, and \code{gsd} (with \code{gsd} sometimes returned as \code{NA}
-for methods that do not estimate it).
+\code{gm}, and \code{gsd}.
 }
 
 \examples{
