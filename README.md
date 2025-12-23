@@ -1,6 +1,6 @@
 # logsplineCDA
 
-This folder is a lightweight R package wrapping the helper functions used in
+A lightweight R package wrapping the helper functions used in
 Rozen & Canales (2025), *A Logspline-Based Approach for Analyzing Left-Censored
 Concentration Data*.
 
